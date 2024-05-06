@@ -4,7 +4,6 @@ function verificarNivel(){
         [document.getElementById('heroi').value, document.getElementById('pontos').value]
     ]
 
-    heroi[0][0] = heroi[0][0] === '' ? 'Desconhecido' : heroi;
 
     let nivel = " "
     if (heroi[0][1] <= 1000) {
