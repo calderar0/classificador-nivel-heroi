@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario #heroi{
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.formulario #pontos {
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.formulario button{
+    padding: 10px;
+    background-color: #1b436e;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 50%;
+    margin-inline: auto;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

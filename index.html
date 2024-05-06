@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');</style>
+    <title>Verifica Nível</title>
+</head>
+<body>
+    <div class="textos">
+        <h1 class="titulo">Classificador de Nível de Herói da DIO</h1>
+        <p class="paragrafo">Classifique aqui seu herói</p>
+    </div>
+    <div class="formulario">
+        <label for="heroi">Nome do Herói:</label>
+        <input type="text" id="heroi" name="heroi" placeholder="Digite o nome do seu herói" required>
+        <label for="nivel">Nível do Herói:</label>
+        <input type="number" id="pontos" name="pontos" placeholder="Digite o nível do seu herói" required>
+        <button onclick="verificarNivel()">Verificar</button>
+        <button onclick="location.reload()" id="reload">Refazer</button>
+    </div>
+    <div id="resultado">
+        <p id="result"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
