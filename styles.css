@@ -19,12 +19,22 @@ body {
 
 .formulario #heroi{
     margin-bottom: 20px;
+    padding: 5px;
     border-radius: 5px;
+}
+
+.formulario .hero-label{
+    margin-bottom: 10px;
 }
 
 .formulario #pontos {
     margin-bottom: 20px;
+    padding: 5px;
     border-radius: 5px;
+}
+
+.formulario .lvl-label{
+    margin-bottom: 10px;
 }
 
 .formulario button{
@@ -34,7 +44,8 @@ body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     width: 50%;
     margin-inline: auto;
 }
@@ -46,11 +57,33 @@ body {
     margin-top: 2rem;
     width: 100%;
     align-items: center;
+    cursor: default;
+}
+
+.textos h1::before {
+    transform: scaleX(0);
+    transform-origin: bottom left;
+}
+
+.textos h1:hover::before {
+    transform: scaleX(1);
+}
+
+.textos h1::before {
+    content: '';
+    display: block;
+    z-index: -1;
+    width: 100%;
+    height: 4px;
+    background-color: #1b436e;
+    transition: transform 0.4s ease;
 }
 
 .resultado {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 500px;
     margin: 20px auto;
