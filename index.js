@@ -6,10 +6,13 @@ function verificarNivel(){
     ]
     
     heroi[0][0] = heroi[0][0] === '' ? 'Desconhecido' : heroi[0][0];
+
     
 
     let nivel = " "
-    if (heroi[0][1] <= 1000) {
+    if (heroi[0][1] === "") {
+        nivel = "Não Avaliado"
+    }else if (heroi[0][1] <= 1000) {
         nivel = "Ferro"
     }else if (heroi[0][1] <= 2000) {
         nivel = "Bronze"
